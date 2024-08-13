@@ -4,8 +4,112 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A Google Gemini Chatbot</title>
-    <!-- Tailwind Css Cdn-->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google icon -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      :root {
+        /* Dark mood colors */
+        --text-color: #e3e3e3;
+        --subheading-color: #828282;
+        --placeholder-color: #a6a6a6;
+        --primary-color: #242424;
+        --secondary-color: #383838;
+        --secondary-hover-color: #444;
+      }
+      body {
+        background: var(--primary-color);
+      }
+      .header,
+      .typing-area {
+        color: var(--text-color);
+        
+      }
+     .tittle{
+        background: linear-gradient(to right,#4285f4,#d96570);
+        
+
+        -webkit-text-fill-color: transparent;
+      }
+    </style>
   </head>
-  <body></body>
+  <body class=" w-screen h-screen flex items-center justify-center ">
+    <header class="header  p-4 ">
+      <!-- Header Greetings -->
+      <h2 class=" tittle font-bold text-3xl w-fit bg-clip-text leading-10  ">Hello, there</h2>
+      <h4 class="text-3xl text-gray-400 leading-10 ">How can I help you today?</h4>
+      <!-- Suggestion List -->
+      <ul class=" list-disc ml-6 mt-4 space-y-2">
+        <li class="">
+          <h4 class="">
+            Help me plan a game night with my friends for under $100.
+          </h4>
+          <br />
+          <span class="material-symbols-outlined"> draw </span>
+        </li>
+        <li class="">
+          <h4 class="">
+            What are the best tips to improve my public speaking skills?
+          </h4>
+          <br />
+          <span class="material-symbols-outlined"> lightbulb </span>
+        </li>
+        <li class="">
+          <h4 class="">
+            Can you find me the latest news on web development?
+          </h4>
+          <br />
+          <span class="material-symbols-outlined"> explore </span>
+        </li>
+        <li class="">
+          <h4 class="">
+            Write a javascript code to sum all elements in an array
+          </h4>
+          <br />
+          <span class="material-symbols-outlined"> code </span>
+        </li>
+      </ul>
+      <!-- Typing Area -->
+      <div class=>
+        <form action="#" >
+          <div class="input-wrapper flex  space-x-2">
+            <input
+              type="text"
+              placeholder="Enter a prompt here"
+              class="input input-bordered input-accent w-full max-w-xs"
+            />
+            <button class="btn btn-active">
+              <span class="material-symbols-outlined"> send </span>
+            </button>
+          </div>
+          <div class=" mt-3">
+            <span class="material-symbols-outlined"> light_mode </span>
+            <span class="material-symbols-outlined"> delete </span>
+          </div>
+        </form>
+        <p class="">
+          Gemini may inaccurate info, including about people, so double-check
+          its responses.
+        </p>
+      </div>
+    </header>
+  </body>
 </html>
